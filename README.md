@@ -10,7 +10,7 @@ This is a java Application simulating Hybrid cryptography using the above algori
 ```
 
 
-Screen shots :
+Screen shot :
 =============================================================
 
 ![Alt text](hc.png?raw=true "Input")
