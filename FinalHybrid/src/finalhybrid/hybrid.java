@@ -171,7 +171,7 @@ public class hybrid extends javax.swing.JFrame
                     encryptedKey = RSA.encrypt(privateKey,eencryptionKey.getText());
                     long endTime=System.nanoTime();
                     long diff=endTime-startTime;
-                    eoutputWindow.setText("Cipher Message:"+AES.encrypt(eplainText.getText(),eencryptionKey.getText())+"Cipher Key:"+new String(encryptedKey)+"Time Required:"+diff+"Message Length:"+eplainText.getText().length());                    
+                    eoutputWindow.setText("Cipher Message:"+AES.encrypt(eplainText.getText(),eencryptionKey.getText())+"\n"+"Cipher Key:"+new String(encryptedKey)+"\n"+"Time Required:"+diff+"\n"+"Message Length:"+eplainText.getText().length());                    
                 } 
                 catch (Exception ex)
                 {
@@ -199,7 +199,7 @@ public class hybrid extends javax.swing.JFrame
             String DecryptedMessage=AES.decrypt(cipherMessage,  new String(secret));
             long endTime=System.nanoTime();
             long diff=endTime-startTime;
-            doutputWindow.setText("Decrypted Message:"+DecryptedMessage+"Decrypted Key:"+new String(secret)+"Time Required:"+diff);
+            doutputWindow.setText("Decrypted Message:"+DecryptedMessage+"\n"+"Decrypted Key:"+new String(secret)+"\n"+"Time Required:"+diff);
         } 
         catch (Exception ex)
         {
