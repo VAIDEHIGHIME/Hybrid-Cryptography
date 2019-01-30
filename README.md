@@ -1,4 +1,4 @@
-# HybridCryptography
+# Hybrid Cryptography
 
 ```
 Hybrid encryption is a mode of encryption that merges two or more encryption systems.
